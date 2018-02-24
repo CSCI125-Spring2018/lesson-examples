@@ -77,9 +77,43 @@ public class ScannerReview
 
     }
 
+    static void test05()
+    {
+        Scanner keyboard = new Scanner(System.in);
+        String line = keyboard.nextLine();
+        String[] array = line.split(" ");
+
+        int total = 0;
+        for(int i=0; i<array.length; i++)
+        {
+            String item = array[i];
+            int number = Integer.parseInt(item);
+            total += number;
+        }
+
+        System.out.println(total);
+    }
+
+    static void test06()
+    {
+        Scanner keyboard = new Scanner(System.in);
+        String line = keyboard.nextLine();
+        String[] array = line.split(" ");
+
+        int total = 0;
+        for(String item: array)
+        {
+            int number = Integer.parseInt(item);
+            total += number;
+        }
+
+        System.out.println(total);
+    }
+
     public static void main(String[] args)
     {
-        test04();
+//        test05();
+        test06();
     }
 
 }
