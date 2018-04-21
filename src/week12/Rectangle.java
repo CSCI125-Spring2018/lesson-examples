@@ -1,4 +1,4 @@
-package week10;
+package week12;
 
 public class Rectangle implements Comparable<Rectangle>
 {
